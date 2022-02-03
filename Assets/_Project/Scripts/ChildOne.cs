@@ -4,16 +4,21 @@ using UnityEngine;
 
 public class ChildOne : ParentClass
 {
+    private void Initialization()
+    {
+        nameChild = "Cube";
+    }
+
     // Start is called before the first frame update
     void Start()
     {
-        nameChild = "Cube";
+        Initialization();
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.Rotate(0f, 1, 0 * speed);
+        Rotation(Vector3.up);
     }
 
     public override void ChangeColor()

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Plane : MonoBehaviour
 {
+    private float speed = 1;
 
     // Update is called once per frame
     void Update()
@@ -13,6 +14,6 @@ public class Plane : MonoBehaviour
 
     private void Rotation()
     {
-        transform.Rotate(0f, -1, 0);
+        transform.Rotate(0f, -1, 0 * speed);
     }
 }

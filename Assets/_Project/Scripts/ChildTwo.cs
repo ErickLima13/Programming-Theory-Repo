@@ -4,15 +4,20 @@ using UnityEngine;
 
 public class ChildTwo : ParentClass
 {
-    // Start is called before the first frame update
-    void Start()
+    private void Initialization()
     {
         nameChild = "Sphere";
     }
 
+    // Start is called before the first frame update
+    void Start()
+    {
+        Initialization();
+    }
+
     private void Update()
     {
-        transform.Rotate(1f, 1, 0 * speed);
+        Rotation(Vector3.one);
     }
 
     public override void ChangeColor()

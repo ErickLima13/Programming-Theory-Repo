@@ -5,23 +5,31 @@ using TMPro;
 
 public class ParentClass : MonoBehaviour
 {
-    public string nameChild = "Capsule";
+    
+    public string nameChild;
+
     public Color color;
     public Material material;
     public TextMeshProUGUI display;
-    public float speed;
+
+    private float speed = 1;
     
+
+    private void Initialization()
+    {
+        nameChild = "Capsule";
+    }
 
     // Start is called before the first frame update
     void Start()
     {
-        nameChild = "Capsule";
+        Initialization();
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.Rotate(1f, 0, 0 * speed);
+        Rotation(Vector3.right);
     }
 
     public virtual void ChangeColor()
@@ -33,8 +41,19 @@ public class ParentClass : MonoBehaviour
     }
 
 
+    public void Rotation(Vector3 angle)
+    {
+        transform.Rotate(angle* speed);        
+    }
+
     private void OnMouseDown()
     {
         ChangeColor();
+        
+    }
+
+    public void Exit()
+    {
+        GameManager.instance.Exit();
     }
 }
