@@ -5,15 +5,13 @@ using TMPro;
 
 public class ParentClass : MonoBehaviour
 {
-    
-    public string nameChild;
+    protected string nameChild ;
+    protected Color color;
 
-    public Color color;
     public Material material;
     public TextMeshProUGUI display;
 
-    private float speed = 1;
-    
+    [SerializeField] [Range(1, 4)] private float speed;
 
     private void Initialization()
     {
@@ -49,7 +47,6 @@ public class ParentClass : MonoBehaviour
     private void OnMouseDown()
     {
         ChangeColor();
-        
     }
 
     public void Exit()

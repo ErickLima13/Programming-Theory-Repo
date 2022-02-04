@@ -14,6 +14,6 @@ public class Plane : MonoBehaviour
 
     private void Rotation()
     {
-        transform.Rotate(0f, -1, 0 * speed);
+        transform.Rotate(0f, -1, 0 * speed * Time.deltaTime);
     }
 }

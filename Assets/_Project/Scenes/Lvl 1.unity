@@ -837,10 +837,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 689620167997a6e4b8220d545debdf6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nameChild: Capsule
-  color: {r: 0, g: 0, b: 0, a: 0}
   material: {fileID: 2100000, guid: 5172ef0e7a5536f4eb1718863ada427c, type: 2}
   display: {fileID: 1313499969}
+  speed: 1
 --- !u!135 &1522175143
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -965,10 +964,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 616d731e44229d94aabfb2160308d6b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nameChild: 
-  color: {r: 0, g: 0, b: 0, a: 0}
   material: {fileID: 2100000, guid: 477a7f06578afcd4da155a149e93498a, type: 2}
   display: {fileID: 1313499969}
+  speed: 1
 --- !u!136 &1567281419
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1078,10 +1076,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e05bf52554db9964a8ea775e525dfb58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nameChild: 
-  color: {r: 0, g: 0, b: 0, a: 0}
   material: {fileID: 2100000, guid: 12d0f3677039bd34db649dc0454703ba, type: 2}
   display: {fileID: 1313499969}
+  speed: 1
 --- !u!65 &1799106311
 BoxCollider:
   m_ObjectHideFlags: 0
